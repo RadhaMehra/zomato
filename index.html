@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="foodieapp">
 
 <head>
     <meta charset="UTF-8">
@@ -9,26 +9,43 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="angular.min.js"></script>
+    <style>
+    input.ng-invalid.ng-dirty {
+        border: 1px solid red;
+    }
+</style>
 </head>
 
 <body id="app">
-    <div class="login">
+    <div class="login hidden">
         <div class="login-form">
             <h3> Login </h3>
-            <form action="http://sarthakbatra.com/loginSubmit" method="POST" name="loginForm">
-              <div class="form-group">
-                  <label for="user-email">Email address</label>
-                  <input type="email" class="form-control" id="user-email" placeholder="Email" name="email">
-              </div>
-              <div class="form-group">
-                  <label for="user-password">Password</label>
-                  <input type="password" class="form-control" id="user-password" placeholder="Password" name="password">
-              </div>
-              <button type="submit" class="btn btn-default">Login</button>
+            <form name="loginForm">
+    <div class="form-group">
+        <label for="user-email">Email address</label>
+        <input type="email" class="form-control" id="user-email" placeholder="Email" name="email" required="" ng-model="user.email">
+        <div ng-show="loginForm.email.$error.required">Required!</div>
+        <div ng-show="loginForm.email.$error.email">This Doesn't look like a valid email</div>
+    </div>
+    <div class="form-group">
+        <label for="user-password">Password</label>
+        <input type="password" class="form-control" id="user-password" placeholder="Password" name="password" required="" ng-model="user.password">
+        <div ng-show="loginForm.password.$error.minlength">
+          Password must be at least 6 characters long
+          </div>
+          <div ng-show="loginForm.password.$error.maxlength">
+          Password must be at most 15 characters long
+          </div>
+          <div ng-show="loginForm.password.$error.required">
+          Please enter your password
+          </div>
+          </div>
+              <div class="welcome-message"> Welcome Back {{email}}</div>
+              <button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid">Login</button>
           </form>
         </div>
     </div>
-    <div class="main hidden">
+    <div class="main " ng-controller="mainController">
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,6 +72,9 @@
         <div class="ui container">
             <div class="hero">
                 <p>Find the best restaurants in town</p>
+            </div>
+            <div ng-repeat="restaurant in restaurants">
+                {{restaurant}}
             </div>
         </div>
     </div>

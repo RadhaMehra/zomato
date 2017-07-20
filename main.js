@@ -6,3 +6,9 @@
 
 //});   11
 //});
+var FoodApp = angular.module('foodieapp', []);
+FoodApp.controller('mainController', function($scope){
+
+$scope.restaurants = ['Farzi Cafe','Pizza Hut','Wenger\'s Deli','Sagar Ratna'];
+
+})
