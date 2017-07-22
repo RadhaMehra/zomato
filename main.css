@@ -12,6 +12,7 @@ body {
 .hero {
     background-image: url('https://www.freewebheaders.com/wordpress/wp-content/gallery/food/popular-food-meal-website-header.jpg');
     background-size: cover;
+    background-position: center;
     min-height: 300px;
     border-radius: 4px;
     color: white;
