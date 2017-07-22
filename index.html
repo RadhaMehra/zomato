@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="angular.min.js"></script>
-    <style>
-    input.ng-invalid.ng-dirty {
-        border: 1px solid red;
-    }
-</style>
+
 </head>
 
 <body id="app">
@@ -73,11 +69,43 @@
             <div class="hero">
                 <p>Find the best restaurants in town</p>
             </div>
-            <div ng-repeat="restaurant in restaurants">
-                {{restaurant}}
+            <div ng-repeat="restaurant in restaurants" class="restaurant">
+    <div class="rest-wrapper">
+        <div class="image">
+            <img src="{{restaurant.image}}" height="100" width="100">
+        </div>
+        <div class="rest-info">
+            <div class="rest-category">
+               <small ng-bind=restaurant.category ></small>
+            </div>
+            <div class="rest-name">
+            <strong ng-bind=restaurant.name></strong>
+            </div>
+            <div>
+               <strong ng-bind=restaurant.location></strong>
+            </div>
+            <div class="rest-address" ng-bind=restaurant.address>
+
             </div>
         </div>
     </div>
+    <div class="rest-extra">
+        <div class="type">
+            <div><small>Cuisines:</small></div>
+            <div><small>Cost for Two: </small></div>
+            <div><small>Hours:</small></div>
+        </div>
+        <div class="value">
+            <div ng-bind=restaurant.cuisines></div>
+            <div ng-bind=restaurant.cost></div>
+            <div ng-bind=restaurant.hours></div>
+        </div>
+    </div>
+    <div class="rating">
+        <strong ng-bind=restaurant.vote></strong>
+    </div>
+</div>
+</div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="main.js"></script>

@@ -20,6 +20,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
+}
+input.ng-invalid.ng-dirty {
+    border: 1px solid red;
 }
 
 #app .navbar {
@@ -53,4 +57,67 @@ body {
     padding: 1rem;
     padding-top: 0;
     border-radius: 4px;
+}
+.restaurant {
+  background-color: white;
+  position: relative;
+  width:600px;
+  margin-left:auto;
+  margin-right: auto;
+
+
+}
+.rest-wrapper {
+  display:flex;
+
+}
+.rest-wrapper .image {
+    margin-right: 1rem;
+}
+
+.rest-wrapper .image img {
+    border-radius: 4px;
+}
+.rest-wrapper .rest-category {
+    color: #89959B;
+    margin-top:8px;
+    text-transform: uppercase;
+}
+.rest-name {
+  color:#D21741;
+  font-size:25px;
+
+}
+.rest-address {
+    color: #89959B;
+}
+.rest-extra {
+
+  display: flex;
+   margin-top: 1rem;
+   border-top: 1px solid #e7e7e7;
+   padding: 1rem;
+}
+.rest-extra .type {
+  text-transform: uppercase;
+  color: #89959B;
+  flex: none;
+  margin-right: 2rem;
+}
+.restaurant .rating {
+
+background-color: green;
+position:absolute;
+top:15px;
+right:20px;
+padding-left:8px;
+padding-right:8px;
+padding-top: 5px;
+padding-bottom:5px;
+border-radius:4px;
+color:white;
+}
+img {
+  margin-top: 10px;
+  margin-left:10px;
 }
