@@ -10,7 +10,7 @@ body {
 }
 
 .hero {
-    background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');
+    background-image: url('https://www.freewebheaders.com/wordpress/wp-content/gallery/food/popular-food-meal-website-header.jpg');
     background-size: cover;
     min-height: 300px;
     border-radius: 4px;
@@ -64,6 +64,8 @@ input.ng-invalid.ng-dirty {
   width:600px;
   margin-left:auto;
   margin-right: auto;
+  padding: 20px;
+  margin-bottom: 20px;
 
 
 }
@@ -80,7 +82,7 @@ input.ng-invalid.ng-dirty {
 }
 .rest-wrapper .rest-category {
     color: #89959B;
-    margin-top:8px;
+
     text-transform: uppercase;
 }
 .rest-name {
@@ -90,6 +92,7 @@ input.ng-invalid.ng-dirty {
 }
 .rest-address {
     color: #89959B;
+    text-transform: uppercase;
 }
 .rest-extra {
 
@@ -117,7 +120,25 @@ padding-bottom:5px;
 border-radius:4px;
 color:white;
 }
-img {
-  margin-top: 10px;
-  margin-left:10px;
+.search-bar {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar form .input-wrapper {
+   flex: 1;
+   margin-right: 1rem;
+}
+.btn {
+
+background-color:#CF022D  ;
+color:white;
+
 }
