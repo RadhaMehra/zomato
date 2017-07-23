@@ -11,8 +11,9 @@
     <script src="angular.min.js"></script>
 
 </head>
-
+<!--- body ------------------------------>
 <body id="app">
+  <!--- login form ------------------------------>
     <div class="login hidden ">
         <div class="login-form">
             <h3> Login </h3>
@@ -41,6 +42,7 @@
           </form>
         </div>
     </div>
+    <!--- /.main body------>
     <div class="main " ng-controller="mainController">
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
@@ -52,6 +54,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <!-- header ---------->
                     <a class="navbar-brand" href="#">Foodie</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,18 +68,28 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
+
         <div class="ui container">
             <div class="hero">
-                <p>Find the best restaurants in town</p>
+
+                <p>Find the best restaurants, cafes, and bars in Town</p>
+                <span class="creates">
+                <span class="loginHero">Log in</span>
+                <span class="createAccount">Create an account</span></span>
             </div>
+
+            <!-- search bar------>
             <div class="search-bar">
     <form>
     <div class="input-wrapper">
-      <input type="text" class="form-control" placeholder="Search..." ng-model="query">
+
+     <input type="text" class="form-control" placeholder="Search for restaurants or cuisines" ng-model="query">
+
     </div>
     <button type="submit" class="btn btn-default">Search</button>
   </form>
 </div>
+<!---list of restaurants and informations---->
             <div ng-repeat="restaurant in restaurants  | filter:query" class="restaurant">
     <div class="rest-wrapper">
         <div class="image">
@@ -110,10 +123,16 @@
         </div>
     </div>
     <div class="rating">
-        <strong ng-bind=restaurant.vote></strong>
+        <strong ng-bind=restaurant.rating></strong>
     </div>
+    <small ng-bind=restaurant.vote class="votes"></small>
+      <small ng-bind=restaurant.review class="review"></small>
+
+      <div class="order">Order Online<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
 </div>
+
 </div>
+<!---script imports---->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="main.js"></script>
