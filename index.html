@@ -70,6 +70,7 @@
         </nav>
 
         <div class="ui container">
+
             <div class="hero">
 
                 <p>Find the best restaurants, cafes, and bars in Town</p>
@@ -83,17 +84,19 @@
     <form>
     <div class="input-wrapper">
 
-     <input type="text" class="form-control" placeholder="Search for restaurants or cuisines" ng-model="query">
+     <input type="text" class="form-control" placeholder="Search for restaurants or cuisines" ng-model="query" />
 
     </div>
+
     <button type="submit" class="btn btn-default">Search</button>
+  </div>
   </form>
 </div>
 <!---list of restaurants and informations---->
             <div ng-repeat="restaurant in restaurants  | filter:query" class="restaurant">
     <div class="rest-wrapper">
         <div class="image">
-            <img src="{{restaurant.image}}" height="100" width="100">
+            <img ng-src="{{restaurant.image}}" height="100" width="100">
         </div>
         <div class="rest-info">
             <div class="rest-category">
