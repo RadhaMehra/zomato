@@ -7,13 +7,18 @@
 body {
     background-color: #F3F3E8;
     font-family: Helvetica, Arial, sans-serif;
+
+}
+.ui.container{
+  width:100%;
+  padding:0px;
 }
 
 .hero {
-    background-image: url('https://www.freewebheaders.com/wordpress/wp-content/gallery/food/popular-food-meal-website-header.jpg');
+    background-image: url('http://www.avinabacaterer.co.in/images1/image3.jpeg');
     background-size: cover;
     background-position: center;
-    min-height: 300px;
+    min-height: 400px;
     border-radius: 4px;
     color: white;
     font-size: 36px;
@@ -21,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+
 }
 input.ng-invalid.ng-dirty {
     border: 1px solid red;
@@ -131,6 +136,9 @@ cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
+    position:relative;
+    bottom:100px;
+    padding-top:15px;
 }
 
 .search-bar form {
@@ -142,10 +150,22 @@ cursor: pointer;
    flex: 1;
    margin-right: 1rem;
 }
+.form-control{
+  padding-top:19px;
+    padding-bottom:19px;
+    border:none;
+    font-family: Corbel;
+}
 .btn {
-
+border:none;
 background-color:#CF022D  ;
 color:white;
+padding:10px 20px;
+}
+.btn:hover{
+  border:none;
+  background-color:darkred  ;
+  color:white;
 
 }
 .votes {
@@ -177,20 +197,10 @@ cursor:pointer;
   color:white;
 
 }
-.creates{
-  position:absolute;
-  top: 70px;
-  right:240px;
-}
-.createAccount{
-  background-color: transparent;
-  height:30px;
-  font-size:15px;
-  border: 0.2rem solid white;
-  border-radius:2px;
-  padding:8px 12px;
-}
-.loginHero{
-font-size:15px;
-padding:10px;
+.zomato{
+  border-radius:5px;
+  height:110px;
+  width:120px;
+  position:relative;
+  top:-50px;
 }

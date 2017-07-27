@@ -9,132 +9,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="angular.min.js"></script>
+   <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
 
 </head>
 <!--- body ------------------------------>
 <body id="app">
   <!--- login form ------------------------------>
-    <div class="login hidden ">
-        <div class="login-form">
-            <h3> Login </h3>
-            <form name="loginForm">
-    <div class="form-group">
-        <label for="user-email">Email address</label>
-        <input type="email" class="form-control" id="user-email" placeholder="Email" name="email" required="" ng-model="user.email">
-        <div ng-show="loginForm.email.$error.required">Required!</div>
-        <div ng-show="loginForm.email.$error.email">This Doesn't look like a valid email</div>
-    </div>
-    <div class="form-group">
-        <label for="user-password">Password</label>
-        <input type="password" class="form-control" id="user-password" placeholder="Password" name="password" required="" ng-model="user.password" ng-minlength="6" ng-maxlength="15">
-        <div ng-show="loginForm.password.$error.minlength">
-          Password must be at least 6 characters long
-          </div>
-          <div ng-show="loginForm.password.$error.maxlength">
-          Password must be at most 15 characters long
-          </div>
-          <div ng-show="loginForm.password.$error.required">
-          Please enter your password
-          </div>
-          </div>
-              <div class="welcome-message"> Welcome Back {{email}}</div>
-              <button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid">Login</button>
-          </form>
-        </div>
-    </div>
+
     <!--- /.main body------>
-    <div class="main " ng-controller="mainController">
-        <nav class="navbar navbar-default navbar-fixed">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- header ---------->
-                    <a class="navbar-brand" href="#">Foodie</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Order Online</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-
-        <div class="ui container">
-
-            <div class="hero">
-
-                <p>Find the best restaurants, cafes, and bars in Town</p>
-                <span class="creates">
-                <span class="loginHero">Log in</span>
-                <span class="createAccount">Create an account</span></span>
-            </div>
-
-            <!-- search bar------>
-            <div class="search-bar">
-    <form>
-    <div class="input-wrapper">
-
-     <input type="text" class="form-control" placeholder="Search for restaurants or cuisines" ng-model="query" />
-
-    </div>
-
-    <button type="submit" class="btn btn-default">Search</button>
-  </div>
-  </form>
-</div>
-<!---list of restaurants and informations---->
-            <div ng-repeat="restaurant in restaurants  | filter:query" class="restaurant">
-    <div class="rest-wrapper">
-        <div class="image">
-            <img ng-src="{{restaurant.image}}" height="100" width="100">
-        </div>
-        <div class="rest-info">
-            <div class="rest-category">
-               <small ng-bind=restaurant.category ></small>
-            </div>
-            <div class="rest-name">
-            <strong ng-bind=restaurant.name ></strong>
-            </div>
-            <div>
-               <strong ng-bind=restaurant.location></strong>
-            </div>
-            <div class="rest-address" ng-bind=restaurant.address>
-
-            </div>
-        </div>
-    </div>
-    <div class="rest-extra">
-        <div class="type">
-            <div><small>Cuisines:</small></div>
-            <div><small>Cost for Two: </small></div>
-            <div><small>Hours:</small></div>
-        </div>
-        <div class="value">
-            <div ng-bind=restaurant.cuisines></div>
-            <div ng-bind=restaurant.cost | number></div>
-            <div ng-bind=restaurant.hours></div>
-        </div>
-    </div>
-    <div class="rating">
-        <strong ng-bind=restaurant.rating></strong>
-    </div>
-    <small ng-bind=restaurant.vote class="votes"></small>
-      <small ng-bind=restaurant.review class="review"></small>
-
-      <div class="order">Order Online<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
-</div>
-
-</div>
+    <!---view part---->
+  <div ng-view></div>
 <!---script imports---->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
