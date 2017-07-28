@@ -12,6 +12,7 @@ FoodApp.config(function ($routeProvider) {
 	.when('/',{
 		templateUrl: 'pages/login.html',
 		controller: 'loginController'
+
 	})
 	.when('/home',{
 		templateUrl: 'pages/home.html',
@@ -19,12 +20,6 @@ FoodApp.config(function ($routeProvider) {
 	})
 })
 
-FoodApp.controller('loginController',function($scope,$location) {
-	$scope.goToHome = function() {
-		// console.log('Do Something')
-		$location.url('home');
-	}
-})
 FoodApp.controller('mainController', function($scope){
 //  $scope.restaurants = ['Pirates of Grill','Dastaan','OvenFresh,'KhoKha'];
 
@@ -159,3 +154,9 @@ FoodApp.controller('mainController', function($scope){
     image: 'https://static.wixstatic.com/media/593f77_c738bcee99e0465d977937275ca59a7c.jpg'
   }]
 });
+FoodApp.controller('loginController',function($scope,$location) {
+	$scope.goToHome = function() {
+		 console.log('Do Something')
+		$location.url('home');
+	}
+})
