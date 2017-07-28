@@ -18,7 +18,7 @@
               <ul class="nav navbar-nav navbar-right">
               <li><a href="#!/home">Home</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">Order Online</a></li>
+              <li><a href="#!/home">Order Online</a></li>
               <li><a href="#!/">Logout</a></li>
             </ul>
                         </div>
@@ -60,8 +60,8 @@
            <small ng-bind=restaurant.category ></small>
         </div>
         <div class="rest-name">
-        <strong ng-bind=restaurant.name ></strong>
-        </div>
+    <a ng-href="#!/restaurant/{{restaurant.id}}"><strong>{{restaurant.name}}</strong></a>
+</div>
         <div>
            <strong ng-bind=restaurant.location></strong>
         </div>
