@@ -217,3 +217,13 @@ cursor:pointer;
   border-radius:6px;
 
 }
+.diabetic {
+
+  position:absolute;
+  right:100px;
+  top:70px;
+}
+.diabetic-rest{
+margin-left:20px;
+
+}

@@ -28,7 +28,7 @@
 
 <!---<h1>Show Restaurant {{restaurantId}} details here</h1---->
 
-<div  class="restaurant" ng-if="restaurant.name">
+<div  class="restaurant diabetic-rest" ng-if="restaurant.name">
 <div class="rest-wrapper">
 <div class="image">
 <img ng-src="{{restaurant.image}}" height="100" width="100">
@@ -74,9 +74,11 @@
 
 
 </div>
+<div class="diabetic">
 <div>
-    <img ng-src="{{restaurant.bestDish.image}}" height="170" width="170" class="restaurantImage">
+    <img ng-src="{{restaurant.bestDish.image}}" height="250" width="250" class="restaurantImage">
   </div>
+  
   <div ng-if="ingredients">
       <ol>
       <li ng-repeat="ingredient in ingredients">
@@ -87,3 +89,4 @@
 <div ng-if="message">
 						<b>{{message}}</b> <!--show diabetes message-->
 						</div>
+</div>
