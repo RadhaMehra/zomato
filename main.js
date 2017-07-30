@@ -30,7 +30,7 @@ FoodApp.config(function ($routeProvider) {
 
 FoodApp.controller('mainController', function($scope,$location){				//mainController
 //  $scope.restaurants = ['Pirates of Grill','Dastaan','OvenFresh,'KhoKha'];
-  
+
       $scope.goToOnline = function() {
            console.log('Go to Online');
           $location.url('online');
@@ -202,7 +202,6 @@ FoodApp.controller('loginController',function($scope,$location) {						//loginCo
 
 
 FoodApp.controller('onlineController',function($scope,$location) {						//orderonlineController
-<<<<<<< HEAD
 	$scope.goToOnline = function() {
 			 console.log('Go to Online');
 			$location.url('online');
@@ -301,7 +300,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
     },
     {
 =======
-	
+
    $scope.restaurants = [{                    //array of restaurant
       name: 'Pirates of Grill',
       address: '313, Third Floor, Elante Mall, Phase 1, Chandigarh Industrial Area, Chandigarh',
@@ -508,8 +507,8 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
 
 
   $scope.orderonline = function() {
-		
-		
+
+
 	}
 >>>>>>> 587036e3f36f73839b184a3a02dc42540673a07c
 })
