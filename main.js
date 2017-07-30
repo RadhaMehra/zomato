@@ -6,7 +6,7 @@
 
 //});   11
 //});
-var FoodApp = angular.module('foodieApp',['ngRoute']);
+var FoodApp = angular.module('foodieApp',['ngRoute']);     //module
 FoodApp.config(function ($routeProvider) {
 	$routeProvider
 	.when('/',{
@@ -24,10 +24,10 @@ FoodApp.config(function ($routeProvider) {
 	})
 })
 
-FoodApp.controller('mainController', function($scope){
+FoodApp.controller('mainController', function($scope){				//mainController
 //  $scope.restaurants = ['Pirates of Grill','Dastaan','OvenFresh,'KhoKha'];
 
-  $scope.restaurants = [{
+  $scope.restaurants = [{										//array of restaurant
   	name: 'Pirates of Grill',
   	address: '313, Third Floor, Elante Mall, Phase 1, Chandigarh Industrial Area, Chandigarh',
   	location: 'Chandigarh',
@@ -178,15 +178,15 @@ FoodApp.controller('mainController', function($scope){
 
   }]
 });
-FoodApp.controller('loginController',function($scope,$location) {
+FoodApp.controller('loginController',function($scope,$location) {						//loginController
 	$scope.goToHome = function() {
 		 console.log('Go to home page')
 		$location.url('home');
 	}
 })
-FoodApp.controller('restaurantController',function($scope,$routeParams,$http) {
+FoodApp.controller('restaurantController',function($scope,$routeParams,$http) {				//restaurantController
 	$scope.restaurantId = $routeParams.id;
-	var diabetic_ingredients = ['sweet', 'chocolate', 'brownie', 'rice', 'french fries', 'pasta', 'cookies', 'chicken', 'nachos', 'pie',
+	var diabetic_ingredients = ['sweet', 'chocolate', 'brownie', 'rice', 'french fries', 'pasta', 'cookies', 'chicken', 'nachos', 'pie',				//array of diabetic causing ingredients
 	 'yogurt', 'smoothie', 'mayonnaise', 'hamburger','cake', 'pizza']
 	$scope.ingredients = [];
 	var restaurants = [{
@@ -363,15 +363,15 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http) {
 
 	$scope.getIngredients = function(url) {
 	var data = '{"inputs":[{"data":{"image":{"url":"' + url + '"}}}]}'
-	$http({
+	$http({																																					//api call
 		'method': 'POST',
 		'url': 'https://api.clarifai.com/v2/models/bd367be194cf45149e75f01d59f77ba7/outputs',
 		'headers': {
-			'Authorization': 'Key d7a5cd67d77b4b478f7d8a870b45e266',
+			'Authorization': 'Key d7a5cd67d77b4b478f7d8a870b45e266',				//api key
 			'Content-Type': 'application/json'
 		},
 		'data': data
-	}).then(function (response) {
+	}).then(function (response) {										//diabetic-helper code
 								var ingredients = response.data.outputs[0].data.concepts;
 					  			$scope.ingredient = [];
 									//  var cboxArray = [];
