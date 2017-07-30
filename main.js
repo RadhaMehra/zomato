@@ -180,7 +180,7 @@ FoodApp.controller('mainController', function($scope){
 });
 FoodApp.controller('loginController',function($scope,$location) {
 	$scope.goToHome = function() {
-		 console.log('Do Something')
+		 console.log('Go to home page')
 		$location.url('home');
 	}
 })
