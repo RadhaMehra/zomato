@@ -281,3 +281,6 @@ p {
 a.home-name{
   color:#cb202d;
 }
+a {
+  cursor: pointer;
+}
