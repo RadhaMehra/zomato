@@ -1,3 +1,5 @@
+
+<div class="restaurant1" ng-controller="restaurantController">
 <nav class="navbar navbar-default navbar-fixed">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,7 +29,6 @@
 
 
 <!---<h1>Show Restaurant {{restaurantId}} details here</h1---->
-
 <div  class="restaurant diabetic-rest" ng-if="restaurant.name">
 <div class="rest-wrapper">
 <div class="image">
@@ -76,17 +77,20 @@
 </div>
 <div class="diabetic">
 <div>
-    <img ng-src="{{restaurant.bestDish.image}}" height="250" width="250" class="restaurantImage">
+  <h3 class="best">Best Dish of Our Restaurant</h3>
+    <img ng-src="{{restaurant.bestDish.image}}"  width=400px; class="restaurantImage">
   </div>
-  
-  <div ng-if="ingredients">
+
+  <div ng-if="ingredients" class="ingredients">
       <ol>
       <li ng-repeat="ingredient in ingredients">
       {{ingredient}}
       </li>
       </ol>
   </div>
-<div ng-if="message">
-						<b>{{message}}</b> <!--show diabetes message-->
-						</div>
+
+          <div ng-if="text" class="text">
+          						<b>{{text}}</b> <!--show diabetes message-->
+                    </div>
+</div>
 </div>

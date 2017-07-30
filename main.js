@@ -251,8 +251,12 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http) {
     hours: '12 Noon to 1 AM (Mon-Sun)',
     vote:'800 votes',
     review:'650 reviews',
-    image: 'http://blog.the3hungrymen.com/wp-content/uploads/2015/08/bbqnation-13.jpg'
+    image: 'http://blog.the3hungrymen.com/wp-content/uploads/2015/08/bbqnation-13.jpg',
+		bestDish: {
+	name: ' Special Burger',
+	image: 'http://wallpapersdsc.net/wp-content/uploads/2016/09/Junk-Food-HD-Background.jpg'
   },
+},
   {
     name: 'KhoKha',
     address: 'Booth 123, Sector 9C, Sector 9, Chandigarh',
@@ -382,13 +386,13 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http) {
 					var d = $scope.ingredients.indexOf(diabetic_ingredients[j]);
 					if(d>=0)
 					{
-						$scope.message="This food is not healthy for diabetic patient";
-						console.log($scope.message);
+						$scope.text="This food is not healthy for diabetic patient";
+						console.log($scope.text);
 						break;
 					}
 					else{
-												$scope.message = "This food is healthy for diabetic patients ";
-												console.log($scope.message);
+												$scope.text = "This food is healthy for diabetic patients ";
+												console.log($scope.text);
 					}
 				}
     		// $('.ingredients').html(list);

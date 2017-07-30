@@ -13,7 +13,11 @@ body {
   width:100%;
   padding:0px;
 }
-
+.login{
+  background-image: url('http://cdn.wallpapersafari.com/4/21/9hnwIm.jpg');
+  background-position: center;
+  background-size: cover;
+}
 .hero {
     background-image: url('http://www.avinabacaterer.co.in/images1/image3.jpeg');
     background-size: cover;
@@ -59,7 +63,7 @@ input.ng-invalid.ng-dirty {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+
     padding: 1rem;
     padding-top: 0;
     border-radius: 4px;
@@ -212,6 +216,15 @@ cursor:pointer;
     padding: 0.4rem 1rem;
     border-radius: 4px;
     cursor: pointer;
+  }
+.bestDish .button:hover{
+    display: inline-block;
+    background-color:#cb202d;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+     box-shadow: 10px 10px 15px #888888;
 }
 .restaurantImage{
   border-radius:6px;
@@ -224,6 +237,32 @@ cursor:pointer;
   top:70px;
 }
 .diabetic-rest{
+  margin-top:50px;
 margin-left:20px;
+}
+.ingredients{
+
+  margin-top: 25px;
+}
+.message{
+  border:1px solid red;
+  padding:10px;
+  background-color: white;
+  border-radius:4px;
+   box-shadow: 10px 10px 15px #888888;
+   color:red;
+}
+.text{
+  border:1px solid red;
+  padding:10px;
+  background-color: white;
+  border-radius:4px;
+   box-shadow: 10px 10px 15px #888888;
+   color:green;
+   text-align:center;
+}
+.best{
+margin-top:0px;
+text-align:center;
 
 }
