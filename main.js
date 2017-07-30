@@ -186,7 +186,8 @@ FoodApp.controller('loginController',function($scope,$location) {
 })
 FoodApp.controller('restaurantController',function($scope,$routeParams,$http) {
 	$scope.restaurantId = $routeParams.id;
-	var diabetic_ingredients = ['sweet', 'chocolate', 'brownie', 'rice', 'french fries', 'pasta', 'cookies', 'chicken', 'nachos', 'pie', 'yogurt', 'smoothie', 'mayonnaise', 'hamburger','cake', 'pizza']
+	var diabetic_ingredients = ['sweet', 'chocolate', 'brownie', 'rice', 'french fries', 'pasta', 'cookies', 'chicken', 'nachos', 'pie',
+	 'yogurt', 'smoothie', 'mayonnaise', 'hamburger','cake', 'pizza']
 	$scope.ingredients = [];
 	var restaurants = [{
   	name: 'Pirates of Grill',
@@ -378,7 +379,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http) {
   			}
 				for(var j=0; j<diabetic_ingredients.length; j++)
 				{
-					var d = diabetic_ingredients.indexOf($scope.ingredient[j]);
+					var d = $scope.ingredients.indexOf(diabetic_ingredients[j]);
 					if(d>=0)
 					{
 						$scope.message="This food is not healthy for diabetic patient";
@@ -386,7 +387,8 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http) {
 						break;
 					}
 					else{
-												$scope.message = "This food is healthy for diabetes patients ";
+												$scope.message = "This food is healthy for diabetic patients ";
+												console.log($scope.message);
 					}
 				}
     		// $('.ingredients').html(list);
