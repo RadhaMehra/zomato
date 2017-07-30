@@ -1,0 +1,97 @@
+<!---restaurantcontroller--->
+<div class="restaurant1" ng-controller="restaurantController">
+<nav class="navbar navbar-default navbar-fixed">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- header ---------->
+            <a class="navbar-brand" href="#">zomato</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="#!/home">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#!/home">Order Online</a></li>
+          <li><a href="#!/">Logout</a></li>
+        </ul>
+                    </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<!---<h1>Show Restaurant {{restaurantId}} details here</h1---->
+<div  class="restaurant diabetic-rest" ng-if="restaurant.name">
+<div class="rest-wrapper">
+<div class="image">
+<img ng-src="{{restaurant.image}}" height="100" width="100">
+</div>
+<div class="rest-info">
+<div class="rest-category">
+   <small ng-bind=restaurant.category ></small>
+</div>
+<div class="rest-name">
+<strong ng-bind=restaurant.name ></strong>
+</div>
+<div>
+   <strong ng-bind=restaurant.location></strong>
+</div>
+<div class="rest-address" ng-bind=restaurant.address>
+
+</div>
+</div>
+</div>
+<div class="rest-extra">
+    <div class="type">
+        <div><small>Cuisines:</small></div>
+        <div><small>Cost for Two: </small></div>
+        <div><small>Hours:</small></div>
+        <div ng-if="restaurant.bestDish"><small>Recommended: </small></div>
+    </div>
+    <div class="value">
+        <div>{{restaurant.cuisines}}</div>
+        <div>₹{{restaurant.cost | number}}</div>
+        <div>{{restaurant.hours}}</div>
+        <div class="bestDish" ng-if="restaurant.bestDish">
+	      <span>{{restaurant.bestDish.name}} </span>
+	        <div ng-click="getIngredients(restaurant.bestDish.image)" class="button">Get Ingredients</div>
+
+		</div>
+    </div>
+</div>
+<div class="rating">
+<strong ng-bind=restaurant.rating></strong>
+</div>
+<small ng-bind=restaurant.vote class="votes"></small>
+<small ng-bind=restaurant.review class="review"></small>
+
+
+</div>
+<!---bestDish and diabetic-helper content------>
+<div class="diabetic">
+<div>
+  <h3 class="best">Best Dish in Our Restaurant</h3>
+    <img ng-src="{{restaurant.bestDish.image}}"  width=400px; class="restaurantImage">
+  </div>
+
+  <div ng-if="ingredients" class="ingredients">
+      <ol>
+      <li ng-repeat="ingredient in ingredients">
+      {{ingredient}}
+      </li>
+      </ol>
+  </div>
+   <!--show diabetes message-->
+          <div ng-if="text" class="text">
+          						<b>{{text}}</b>
+                    </div>
+</div>
+</div>
