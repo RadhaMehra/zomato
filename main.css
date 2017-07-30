@@ -20,7 +20,7 @@ body {
   color:white;
 }
 .hero {
-    background-image: url('http://www.avinabacaterer.co.in/images1/image3.jpeg');
+    background-image: url('http://whiskeyjax.com/wp-content/uploads/2016/08/burgermenuheader-1024x320.png');
     background-size: cover;
     background-position: center;
     min-height: 400px;
@@ -265,5 +265,18 @@ margin-left:20px;
 .best{
 margin-top:0px;
 text-align:center;
+color:#cb202d;
+font-family: monospace;
+ text-shadow:5px 5px 5px #CD5C5C;
+}
+.ingredients li {
+  font-family: monospace;
 
+}
+p {
+  font-family: Lucida Console;
+
+}
+a.home-name{
+  color:#cb202d;
 }
