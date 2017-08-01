@@ -669,23 +669,7 @@ margin-top:30px;
  display:none;
 }
 .best {
-    margin-top: 315px;
-    margin-left: 0px;
-    text-align: center;
-    color: #cb202d;
-    font-family: monospace;
-    text-shadow: 5px 5px 5px #CD5C5C;
-}
-.ingredients li {
-    font-family: monospace;
-    margin-left: 91px;
-}
-.diabetic {
-    position: absolute;
-    right: 10px;
-    top: 70px;
-    left: 5px;
-    margin-bottom:20px;
+  display:none;
 }
 .bestDish .button {
     display: inline-block;
@@ -725,5 +709,33 @@ margin-top:30px;
     border-radius: 4px;
     cursor: pointer;
      box-shadow: 10px 10px 15px #888888;
+}
+.restaurantImage {
+  widtht:25px;
+  margin-right:20px;
+}
+.text {
+    border: 1px solid red;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 10px 10px 15px #888888;
+    color: green;
+    text-align: center;
+    margin-left: 89px;
+    margin-bottom: 20px;
+}
+.ingredients li {
+    font-family: monospace;
+    margin-left: 77px;
+}
+
+.diabetic {
+  position: absolute;
+  right: 71px;
+  top: 357px;
+}
+p{
+  font-size: 20px;
 }
 }
