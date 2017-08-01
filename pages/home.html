@@ -1,95 +1,97 @@
-<!---mainbody---->
-<div class="main " ng-controller="mainController">
-    <nav class="navbar navbar-default navbar-fixed">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- header ---------->
-                <a class="navbar-brand" href="#">zomato</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-              <li><a href="#!/home">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a ng-click="goToOnline()">Order Online</a></li>
-              <li><a href="#!/">Logout</a></li>
-            </ul>
-                        </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <div class="ui container">
+<div ng-controller="mainController">
+  <nav class="navbar navbar-default navbar-fixed">
+      <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!-- header ---------->
+              <a class="navbar-brand" href="#">zomato</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="#!/home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a ng-click="goToOnline()">Order Online</a></li>
+            <li><a href="#!/">Logout</a></li>
+          </ul>
+                      </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+  <div class="ui container">
 
-        <div class="hero">
-          <img ng-src="zomato.jpg" class="zomato">
-            <p>Find the best restaurants, cafes, and bars in Town</p>
-
-        </div>
-        <!-- search bar------>
-
-        <div class="search-bar">
-      <form>
-      <div class="input-wrapper">
-
-      <input type="text" class="form-control" placeholder="Search for restaurants or cuisines...." ng-model="query" />
+      <div class="hero" class="img-responsive" alt="Responsive image">
+        <img ng-src="zomato.jpg" class="zomato">
+          <p>Find the best restaurants, cafes, and bars in Town</p>
 
       </div>
+      <!-- search bar------>
 
-      <button type="submit" class="btn btn-default">Search</button>
-      </div>
-      </form>
+      <div class="search-bar">
+    <form>
+    <div class="input-wrapper">
 
-      </div>
+    <input type="text" class="form-control" placeholder="Search for restaurants or cuisines...." ng-model="query" />
 
+    </div>
+
+    <button type="submit" class="btn btn-default button3">Search</button>
+
+    </form>
+</div>
+    </div>
 <!---list of restaurants and informations---->
-        <div ng-repeat="restaurant in restaurants  | filter:query" class="restaurant">
-<div class="rest-wrapper">
-    <div class="image">
-        <img ng-src="{{restaurant.image}}" height="100" width="100">
-    </div>
-    <div class="rest-info">
-        <div class="rest-category">
-           <small ng-bind=restaurant.category ></small>
-        </div>
-        <div class="rest-name">
-    <a ng-href="#!/restaurant/{{restaurant.id}}" class="home-name"><strong>{{restaurant.name}}</strong></a>
-</div>
-        <div>
-           <strong ng-bind=restaurant.location></strong>
-        </div>
-        <div class="rest-address" ng-bind=restaurant.address>
 
-        </div>
-    </div>
-</div>
-<div class="rest-extra">
-    <div class="type">
-        <div><small>Cuisines:</small></div>
-        <div><small>Cost for Two: </small></div>
-        <div><small>Hours:</small></div>
-    </div>
-    <div class="value">
-        <div ng-bind=restaurant.cuisines></div>
-        <div ng-bind=restaurant.cost | number></div>
-        <div ng-bind=restaurant.hours></div>
-    </div>
-</div>
-<div class="rating">
-    <strong ng-bind=restaurant.rating></strong>
-</div>
-<small ng-bind=restaurant.vote class="votes"></small>
-  <small ng-bind=restaurant.review class="review"></small>
+      <div id="home">
+        <h2> Collections</h2>
+        <p style="font-family: sans-serif; font-size:18px; color:#89959b; margin-top:10px;">Explore curated lists of top restaurants, cafes, pubs, and bars based on trends</p>
+      </div>
 
-  <div class="order">Order Online<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+    <div id="home1">
+     <img ng-src="http://2night.s3.amazonaws.com/pics/articles/original/d63/559eb6218fc825d5acaec928.jpg" height="120" width="120" class="img">
+	  <a ng-click="goTotrending() " ><strong class="home" >Trending this week</strong></a>
+	  <p class="newly">The most popular restaurant this week</p>
+  </div>
+
+   <div id="home2">
+	<img ng-src="http://www.magic4walls.com/wp-content/uploads/2015/11/Vegetable-Soup-with-Tomatoes-Peppers-chili-694x417.jpg" height="120" width="120" class="img">
+	<a ng-click="goTonewly()"><strong  class="home">Newly Opened</strong></a>
+	 <p class="newly">The best new places in town</p>
 </div>
 
+
+
+
+
+<div id="home3">
+     <img ng-src="https://images5.alphacoders.com/415/415257.jpg" height="120" width="120" class="img">
+	  <a ng-click=" goTofeatured()"><strong  class="home">Featured</strong></a>
+	   <p class="newly">Best restaurant in town</p>
+   </div>
+<div id="home4">
+	<img ng-src="https://wallpaperscraft.com/image/food_pancakes_crepes_honey_plate_berries_blueberries_raspberries_currants_74225_2048x1152.jpg" height="120" width="120" class="img">
+	    <a ng-click="goTobuffet() "><strong  class="home">Great Buffets</strong></a>
+	 <p class="newly">Eat to your heart's content</p>
+</div>
+
+<div class="food">
+  <img ng-src="http://kushwaha.tech/img/sc_v3/home.jpg" height="250px" class="mobile">
+  <h3 class="look">Looking for the Food Feed? Get the app!</h3>
+  <p class="look1">Follow foodies to see their reviews and photos in your Feed, and discover great new restaurants!</p>
+  <p class="look3">We'll send you a link, open it on your phone to download the app<p>
+  <input type="phone number" placeholder="Enter your phone number" class="input-look"><button class="button-look">Text App link</button>
+
+   <input type="email" placeholder="Enter your email id" class="input-look1"><button class="button-look1">Email App link</button>
+   <img ng-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5CDJk-XAGBzRlemXCCdXh2R9PJt4wjo7ydL6H38lS6nZAGTU-" height=60 width=200 >
+
+   <img ng-src="http://f1.imgci.com/PICTURES/CMS/39700/39723.png" height=60 width=200>
+</div>
 </div>

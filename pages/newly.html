@@ -1,0 +1,92 @@
+<!---mainbody---->
+<div ng-controller="newlyController">
+    <nav class="navbar navbar-default navbar-fixed">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- header ---------->
+                <a class="navbar-brand" href="#">zomato</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+              <li><a href="#!/home">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a ng-click="goToOnline()">Order Online</a></li>
+              <li><a href="#!/">Logout</a></li>
+            </ul>
+                        </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="ui container">
+
+        <div class="hero">
+
+<p>The best new places in town</p>
+        </div>
+        <!-- search bar------>
+
+        <div class="search-bar">
+        <form>
+        <div class="input-wrapper">
+
+        <input type="text" class="form-control" placeholder="Search for restaurants or cuisines...." ng-model="query" />
+
+        </div>
+
+        <button type="submit" class="btn btn-default button3">Search</button>
+
+        </form>
+        </div>
+      </div>
+<!---list of restaurants and informations---->
+        <div ng-repeat="restaurant in restaurants | filter:query"  class="restaurant">
+<div class="rest-wrapper">
+    <div class="image">
+        <img ng-src="{{restaurant.image}}" height="100" width="100">
+    </div>
+    <div class="rest-info">
+        <div class="rest-category">
+           <small ng-bind=restaurant.category ></small>
+        </div>
+        <div class="rest-name">
+    <a ng-href="#!/restaurant/{{restaurant.id}}" class="home-name"><strong>{{restaurant.name}}</strong></a>
+</div>
+        <div>
+           <strong ng-bind=restaurant.location></strong>
+        </div>
+        <div class="rest-address" ng-bind=restaurant.address>
+
+        </div>
+    </div>
+</div>
+<div class="rest-extra">
+    <div class="type">
+        <div><small>Cuisines:</small></div>
+        <div><small>Cost for Two: </small></div>
+        <div><small>Hours:</small></div>
+    </div>
+    <div class="value">
+        <div ng-bind=restaurant.cuisines></div>
+        <div ng-bind=restaurant.cost | number></div>
+        <div ng-bind=restaurant.hours></div>
+    </div>
+</div>
+<div class="rating">
+    <strong ng-bind=restaurant.rating></strong>
+</div>
+<small ng-bind=restaurant.vote class="votes"></small>
+  <small ng-bind=restaurant.review class="review"></small>
+
+  <div class="order" ng-click="goToOnline()">Order Online<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+</div>
+
+</div>

@@ -1,74 +1,69 @@
 <!---mainbody---->
 <div ng-controller="onlineController">
-    <nav class="navbar navbar-default navbar-fixed">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- header ---------->
-                <a class="navbar-brand" href="#">zomato</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-              <li><a href="#!/home">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a ng-click="goToOnline()">Order Online</a></li>
-              <li><a href="#!/">Logout</a></li>
-            </ul>
-                        </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+  <nav class="navbar navbar-default navbar-fixed">
+      <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!-- header ---------->
+              <a class="navbar-brand" href="#">zomato</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="#!/home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a ng-click="goToOnline()">Order Online</a></li>
+            <li><a href="#!/">Logout</a></li>
+          </ul>
+                      </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+  <div class="ui container">
+
+      <div class="hero">
+        <img ng-src="zomato.jpg" class="zomato">
+          <p>Find the best restaurants, cafes, and bars in Town</p>
+
+      </div>
+      <!-- search bar------>
+
+      <div class="search-bar">
+    <form>
+    <div class="input-wrapper">
+
+    <input type="text" class="form-control" placeholder="Search for restaurants or cuisines...." ng-model="query" />
+
+    </div>
+
+    <button type="submit" class="btn btn-default button3">Search</button>
 
 
+    </form>
+</div>
+    </div>
 
 <!---list of restaurants and informations---->
-        <div ng-repeat="restaurant in restaurants"  class="restaurant">
-<div class="rest-wrapper">
-    <div class="image">
-        <img ng-src="{{restaurant.image}}" height="100" width="100">
-    </div>
-    <div class="rest-info">
-        <div class="rest-category">
-           <small ng-bind=restaurant.category ></small>
-        </div>
-        <div class="rest-name">
-    <a ng-href="#!/restaurant/{{restaurant.id}}" class="home-name"><strong>{{restaurant.name}}</strong></a>
-</div>
-        <div>
-           <strong ng-bind=restaurant.location></strong>
-        </div>
-        <div class="rest-address" ng-bind=restaurant.address>
+        <h2 id="online-order">How Zomato Order works</h2>
+        <h3 id="online-order1">Ordering food online has never been this easy</h3>
+      <img ng-src="https://b.zmtcdn.com/images/online_ordering/delivery.svg" id="img-online">
+        <img ng-src="https://b.zmtcdn.com/images/online_ordering/menu.svg" id="img-online1">
+        <img ng-src="https://b.zmtcdn.com/images/online_ordering/notification.svg" id="img-online2">
+        <p id="text-online">Explore restaurants that<br> deliver to your doorstep</p>
+        <p id="text-online2">Browse menus and build <br>your order in seconds</p>
+        <p id="text-online3">Follow the status of your <br>order with real-time alerts</p>
+        <img ng-src="https://b.zmtcdn.com/images/online_ordering/pfa-banner-graphic.png" class="img-order">
+        <p class="download-online">Download the Zomato App!</p>
+<p class="download-online1">Get real-time order updates, live chat support, and<br> exclusive app-only offers.<p>
+        <img ng-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5CDJk-XAGBzRlemXCCdXh2R9PJt4wjo7ydL6H38lS6nZAGTU-" height=60 width=200 class="suggest">
 
-        </div>
-    </div>
-</div>
-<div class="rest-extra">
-    <div class="type">
-        <div><small>Cuisines:</small></div>
-        <div><small>Cost for Two: </small></div>
-        <div><small>Hours:</small></div>
-    </div>
-    <div class="value">
-        <div ng-bind=restaurant.cuisines></div>
-        <div ng-bind=restaurant.cost | number></div>
-        <div ng-bind=restaurant.hours></div>
-    </div>
-</div>
-<div class="rating">
-    <strong ng-bind=restaurant.rating></strong>
-</div>
-<small ng-bind=restaurant.vote class="votes"></small>
-  <small ng-bind=restaurant.review class="review"></small>
-
-  <div class="order">Order Online<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
-</div>
-
+        <img ng-src="http://f1.imgci.com/PICTURES/CMS/39700/39723.png" height=60 width=200  class="suggest1">
+        <input type="phone number" placeholder=" Phone number" class="input-online"><button class="button-online">Text App link</button>
 </div>
