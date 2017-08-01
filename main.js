@@ -79,7 +79,7 @@ $scope.goTonewly = function() {
     vote:'141 votes',
     review:'110 reviews',
 		id:'1',
-  	image: 'https://i1.wp.com/urbanescapades.in/wp-content/uploads/2016/05/DSC_0584-tile.jpg'
+  	image: 'images/restaurant1.jpg'
 
   },
   {
@@ -94,7 +94,8 @@ $scope.goTonewly = function() {
     vote:'401 votes',
     review:'310 reviews',
 		id:'2',
-    image: 'https://media-cdn.tripadvisor.com/media/photo-o/0d/e6/42/29/dastaan-limited.jpg'
+    image: 'images/restaurant1.jpg'
+
 
   },
   {
@@ -243,7 +244,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 			 vote:'141 votes',
 			 review:'110 reviews',
 			 id:'1',
-			 image: 'https://i1.wp.com/urbanescapades.in/wp-content/uploads/2016/05/DSC_0584-tile.jpg'
+			 image: 'images/restaurant1.jpg'
 
 		 },
 		 {
@@ -258,7 +259,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 			 vote:'401 votes',
 			 review:'310 reviews',
 			 id:'2',
-			 image: 'https://media-cdn.tripadvisor.com/media/photo-o/0d/e6/42/29/dastaan-limited.jpg'
+			 image: 'images/restaurant2.jpg'
 
 		 },
 	    {
@@ -273,7 +274,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 	      vote:'800 votes',
 	      review:'650 reviews',
 	      id:'4',
-	      image: 'http://blog.the3hungrymen.com/wp-content/uploads/2015/08/bbqnation-13.jpg'
+	      image: 'images/restaurant3.jpg'
 
 	    },
 	    {
@@ -288,7 +289,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 	      vote:'170 votes',
 	      review:'140 reviews',
 	      id:'5',
-	      image: 'http://www.myhealthylivingcoach.com/wp-content/uploads/2015/01/Do-Fast-Food-Companies-Have-to-Take-Responsibility-for-the-Obesity-Epidemic.jpg'
+	      image: 'images/restaurant4.jpg'
 
 	    },
 	    {
@@ -303,7 +304,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 	      vote:'600 votes',
 	      review:'540 reviews',
 	      id:'6',
-	      image: 'http://bestgiftstokolkata.com/wp-content/uploads/2015/05/Rajbhog.jpg'
+	      image: 'images/restaurant5.jpg'
 
 	    },
 	    {
@@ -318,7 +319,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 	      vote:'420 votes',
 	      review:'300 reviews',
 	      id:'7',
-	      image: 'http://img01.ibnlive.in/ibnkhabar/uploads/459x306/jpg/2015/09/p18_food-copy.jpg'
+	      image: 'images/restaurant6.jpg'
 
 	    },
 	    {
@@ -333,7 +334,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 	      vote:'250 votes',
 	      review:'240 reviews',
 	      id:'8',
-	      image: 'https://i2.wp.com/files.hungryforever.com/wp-content/uploads/2015/10/16192325/Food-Festival.jpg?w=1269&strip=all&quality=80'
+	      image: 'images/restaurant7.jpg'
 
 	    },
 	    {
@@ -348,7 +349,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 	      vote:'200 votes',
 	      review:'150 reviews',
 	      id:'9',
-	      image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+	      image: 'images/restaurant8.jpg'
 
 	    },
 	    {
@@ -363,8 +364,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 	      vote:'150 votes',
 	      review:'120 reviews',
 	      id:'10',
-	      image: 'https://static.wixstatic.com/media/593f77_c738bcee99e0465d977937275ca59a7c.jpg'
-
+	      image:'images/restaurant9.jpg'
 	    }]
 })
 FoodApp.controller('featuredController',function($scope,$location) {						//trendingController
@@ -385,7 +385,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'141 votes',
 		      review:'110 reviews',
 		      id:'1',
-		      image: 'https://i1.wp.com/urbanescapades.in/wp-content/uploads/2016/05/DSC_0584-tile.jpg'
+		      image: 'images/restaurant1.jpg'
 
 		    },
 		    {
@@ -400,7 +400,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'401 votes',
 		      review:'310 reviews',
 		      id:'2',
-		      image: 'https://media-cdn.tripadvisor.com/media/photo-o/0d/e6/42/29/dastaan-limited.jpg'
+		      image: 'images/restaurant2.jpg'
 
 		    },
 		    {
@@ -415,7 +415,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'450 votes',
 		      review:'200 reviews',
 		      id:'3',
-		      image: 'https://s-media-cache-ak0.pinimg.com/originals/1c/3f/8e/1c3f8ec546d060e696d305cbfe714afc.jpg'
+		      image: 'images/restaurant3.jpg'
 
 		    },
 		    {
@@ -430,8 +430,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'800 votes',
 		      review:'650 reviews',
 		      id:'4',
-		      image: 'http://blog.the3hungrymen.com/wp-content/uploads/2015/08/bbqnation-13.jpg'
-
+		      image: 'images/restaurant4.jpg'
 		    },
 		    {
 		      name: 'KhoKha',
@@ -445,7 +444,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'170 votes',
 		      review:'140 reviews',
 		      id:'5',
-		      image: 'http://www.myhealthylivingcoach.com/wp-content/uploads/2015/01/Do-Fast-Food-Companies-Have-to-Take-Responsibility-for-the-Obesity-Epidemic.jpg'
+		      image: 'images/restaurant5.jpg'
 
 		    },
 		    {
@@ -460,7 +459,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'600 votes',
 		      review:'540 reviews',
 		      id:'6',
-		      image: 'http://bestgiftstokolkata.com/wp-content/uploads/2015/05/Rajbhog.jpg'
+		      image: 'images/restaurant6.jpg'
 
 		    },
 		    {
@@ -475,7 +474,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'420 votes',
 		      review:'300 reviews',
 		      id:'7',
-		      image: 'http://img01.ibnlive.in/ibnkhabar/uploads/459x306/jpg/2015/09/p18_food-copy.jpg'
+		      image: 'images/restaurant7.jpg'
 
 		    },
 		    {
@@ -490,7 +489,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'250 votes',
 		      review:'240 reviews',
 		      id:'8',
-		      image: 'https://i2.wp.com/files.hungryforever.com/wp-content/uploads/2015/10/16192325/Food-Festival.jpg?w=1269&strip=all&quality=80'
+		      image: 'images/restaurant8.jpg'
 
 		    },
 		    {
@@ -505,7 +504,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'200 votes',
 		      review:'150 reviews',
 		      id:'9',
-		      image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+		      image: 'images/restaurant9.jpg'
 
 		    },
 		    {
@@ -520,7 +519,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		      vote:'150 votes',
 		      review:'120 reviews',
 		      id:'10',
-		      image: 'https://static.wixstatic.com/media/593f77_c738bcee99e0465d977937275ca59a7c.jpg'
+		      image:'images/restaurant10.jpg'
 
 		    }]
 
@@ -543,7 +542,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'141 votes',
 	      review:'110 reviews',
 	      id:'1',
-	      image: 'https://i1.wp.com/urbanescapades.in/wp-content/uploads/2016/05/DSC_0584-tile.jpg'
+	      image:'images/restaurant1.jpg'
 
 	    },
 	    {
@@ -558,7 +557,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'401 votes',
 	      review:'310 reviews',
 	      id:'2',
-	      image: 'https://media-cdn.tripadvisor.com/media/photo-o/0d/e6/42/29/dastaan-limited.jpg'
+	      image: 'images/restaurant2.jpg'
 
 	    },
 	    {
@@ -573,8 +572,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'450 votes',
 	      review:'200 reviews',
 	      id:'3',
-	      image: 'https://s-media-cache-ak0.pinimg.com/originals/1c/3f/8e/1c3f8ec546d060e696d305cbfe714afc.jpg'
-
+	      image: 'images/restaurant3.jpg'
 	    },
 	    {
 	      name: 'Roll Xpress',
@@ -588,8 +586,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'800 votes',
 	      review:'650 reviews',
 	      id:'4',
-	      image: 'http://blog.the3hungrymen.com/wp-content/uploads/2015/08/bbqnation-13.jpg'
-
+	      image: 'images/restaurant4.jpg'
 	    },
 	    {
 	      name: 'Faraabi Cafe',
@@ -603,7 +600,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'170 votes',
 	      review:'140 reviews',
 	      id:'5',
-	      image: 'http://www.myhealthylivingcoach.com/wp-content/uploads/2015/01/Do-Fast-Food-Companies-Have-to-Take-Responsibility-for-the-Obesity-Epidemic.jpg'
+	      image: 'images/restaurant5.jpg'
 
 	    },
 	    {
@@ -618,8 +615,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'600 votes',
 	      review:'540 reviews',
 	      id:'6',
-	      image: 'http://bestgiftstokolkata.com/wp-content/uploads/2015/05/Rajbhog.jpg'
-
+	      image: 'images/restaurant6.jpg'
 	    },
 	    {
 	      name: 'Shree Thaker Bhojanalay',
@@ -633,7 +629,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'420 votes',
 	      review:'300 reviews',
 	      id:'7',
-	      image: 'http://img01.ibnlive.in/ibnkhabar/uploads/459x306/jpg/2015/09/p18_food-copy.jpg'
+	      image: 'images/restaurant7.jpg'
 
 	    },
 	    {
@@ -648,7 +644,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'250 votes',
 	      review:'240 reviews',
 	      id:'8',
-	      image: 'https://i2.wp.com/files.hungryforever.com/wp-content/uploads/2015/10/16192325/Food-Festival.jpg?w=1269&strip=all&quality=80'
+	      image: 'images/restaurant8.jpg'
 
 	    },
 	    {
@@ -663,8 +659,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      vote:'150 votes',
 	      review:'120 reviews',
 	      id:'10',
-	      image: 'https://static.wixstatic.com/media/593f77_c738bcee99e0465d977937275ca59a7c.jpg'
-
+	      image: 'images/restaurant10.jpg'
 	    }]
 })
 FoodApp.controller('buffetController',function($scope,$location) {						//trendingController
@@ -685,7 +680,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'141 votes',
 	      review:'110 reviews',
 	      id:'1',
-	      image: 'https://i1.wp.com/urbanescapades.in/wp-content/uploads/2016/05/DSC_0584-tile.jpg'
+	      image: 'images/restaurant1.jpg'
 
 	    },
 	    {
@@ -700,8 +695,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'401 votes',
 	      review:'310 reviews',
 	      id:'2',
-	      image: 'https://media-cdn.tripadvisor.com/media/photo-o/0d/e6/42/29/dastaan-limited.jpg'
-
+	      image: 'images/restaurant10.jpg'
 	    },
 	    {
 	      name: 'Cafe 17 - Taj Chandigarh',
@@ -715,8 +709,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'450 votes',
 	      review:'200 reviews',
 	      id:'3',
-	      image: 'https://s-media-cache-ak0.pinimg.com/originals/1c/3f/8e/1c3f8ec546d060e696d305cbfe714afc.jpg'
-
+	      image: 'images/restaurant2.jpg'
 	    },
 	    {
 	      name: 'Barbeque Nation',
@@ -730,7 +723,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'800 votes',
 	      review:'650 reviews',
 	      id:'4',
-	      image: 'http://blog.the3hungrymen.com/wp-content/uploads/2015/08/bbqnation-13.jpg'
+	      image: 'images/restaurant3.jpg'
 
 	    },
 	    {
@@ -745,7 +738,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'170 votes',
 	      review:'140 reviews',
 	      id:'5',
-	      image: 'http://www.myhealthylivingcoach.com/wp-content/uploads/2015/01/Do-Fast-Food-Companies-Have-to-Take-Responsibility-for-the-Obesity-Epidemic.jpg'
+	      image: 'images/restaurant4.jpg'
 
 	    },
 	    {
@@ -760,7 +753,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'600 votes',
 	      review:'540 reviews',
 	      id:'6',
-	      image: 'http://bestgiftstokolkata.com/wp-content/uploads/2015/05/Rajbhog.jpg'
+	      image: 'images/restaurant5.jpg'
 
 	    },
 	    {
@@ -775,7 +768,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'420 votes',
 	      review:'300 reviews',
 	      id:'7',
-	      image: 'http://img01.ibnlive.in/ibnkhabar/uploads/459x306/jpg/2015/09/p18_food-copy.jpg'
+	      image: 'images/restaurant6.jpg'
 
 	    },
 	    {
@@ -790,7 +783,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'250 votes',
 	      review:'240 reviews',
 	      id:'8',
-	      image: 'https://i2.wp.com/files.hungryforever.com/wp-content/uploads/2015/10/16192325/Food-Festival.jpg?w=1269&strip=all&quality=80'
+				images:'images/restaurant7.jpg'
 
 	    },
 	    {
@@ -805,7 +798,7 @@ FoodApp.controller('buffetController',function($scope,$location) {						//trendi
 	      vote:'150 votes',
 	      review:'120 reviews',
 	      id:'10',
-	      image: 'https://static.wixstatic.com/media/593f77_c738bcee99e0465d977937275ca59a7c.jpg'
+	      image: 'images/restaurant9.jpg'
 
 	    }]
 })
@@ -830,7 +823,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'141 votes',
       review:'110 reviews',
       id:'1',
-      image: 'https://i1.wp.com/urbanescapades.in/wp-content/uploads/2016/05/DSC_0584-tile.jpg'
+      image: 'images/restaurant1.jpg'
 
     },
     {
@@ -845,7 +838,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'401 votes',
       review:'310 reviews',
       id:'2',
-      image: 'https://media-cdn.tripadvisor.com/media/photo-o/0d/e6/42/29/dastaan-limited.jpg'
+      image: 'images/restaurant4.jpg'
 
     },
     {
@@ -860,7 +853,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'450 votes',
       review:'200 reviews',
       id:'3',
-      image: 'https://s-media-cache-ak0.pinimg.com/originals/1c/3f/8e/1c3f8ec546d060e696d305cbfe714afc.jpg'
+      image: 'images/restaurant2.jpg'
 
     },
     {
@@ -875,7 +868,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'800 votes',
       review:'650 reviews',
       id:'4',
-      image: 'http://blog.the3hungrymen.com/wp-content/uploads/2015/08/bbqnation-13.jpg'
+      image: 'images/restaurant3.jpg'
 
     },
     {
@@ -890,8 +883,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'170 votes',
       review:'140 reviews',
       id:'5',
-      image: 'http://www.myhealthylivingcoach.com/wp-content/uploads/2015/01/Do-Fast-Food-Companies-Have-to-Take-Responsibility-for-the-Obesity-Epidemic.jpg'
-
+      image:'images/restaurant01.jpg'
     },
     {
       name: 'Balaram Mullick Sweets',
@@ -905,8 +897,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'600 votes',
       review:'540 reviews',
       id:'6',
-      image: 'http://bestgiftstokolkata.com/wp-content/uploads/2015/05/Rajbhog.jpg'
-
+      image: 'images/restaurant6.jpg'
     },
     {
       name: 'Shree Thaker Bhojanalay',
@@ -920,8 +911,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'420 votes',
       review:'300 reviews',
       id:'7',
-      image: 'http://img01.ibnlive.in/ibnkhabar/uploads/459x306/jpg/2015/09/p18_food-copy.jpg'
-
+      image: 'images/restaurant7.jpg'
     },
     {
       name: 'Family Tree',
@@ -935,8 +925,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'250 votes',
       review:'240 reviews',
       id:'8',
-      image: 'https://i2.wp.com/files.hungryforever.com/wp-content/uploads/2015/10/16192325/Food-Festival.jpg?w=1269&strip=all&quality=80'
-
+      image: 'images/restaurant8.jpg'
     },
     {
       name: 'Farzi Cafe',
@@ -950,7 +939,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'200 votes',
       review:'150 reviews',
       id:'9',
-      image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+      image: 'images/restaurant5.jpg'
 
     },
     {
@@ -965,7 +954,7 @@ FoodApp.controller('onlineController',function($scope,$location) {						//ordero
       vote:'150 votes',
       review:'120 reviews',
       id:'10',
-      image: 'https://static.wixstatic.com/media/593f77_c738bcee99e0465d977937275ca59a7c.jpg'
+      image:'images/restaurant9.jpg'
 
     }]
 
@@ -993,7 +982,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
   	hours: ' 11 AM to 4 PM, 6:30 PM to 11 PM (Mon-Sun)',
     vote:'141 votes',
     review:'110 reviews',
-  	image: 'https://i1.wp.com/urbanescapades.in/wp-content/uploads/2016/05/DSC_0584-tile.jpg',
+  	image: 'images/restaurant1.jpg',
 		bestDish: {
 	name: 'Healthy lunch',
 	image: 'http://img.taste.com.au/uCOzsMob/w720-h480-cfill-q80/taste/2016/11/barley-and-raw-veg-power-salad-100674-1.jpeg'
@@ -1010,7 +999,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: '11 AM to 11 PM (Mon-Sun)',
     vote:'401 votes',
     review:'310 reviews',
-    image: 'https://media-cdn.tripadvisor.com/media/photo-o/0d/e6/42/29/dastaan-limited.jpg',
+    image: 'images/restaurant2.jpg',
 		bestDish: {
 	name: 'Corn Pizza',
 	image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
@@ -1027,7 +1016,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: '10 AM to 12 Midnight (Mon-Sun)',
     vote:'450 votes',
     review:'200 reviews',
-    image: 'https://s-media-cache-ak0.pinimg.com/originals/1c/3f/8e/1c3f8ec546d060e696d305cbfe714afc.jpg',
+    image: 'images/restaurant10.jpg',
 		bestDish: {
 	name: 'Asian Mandarin Salad',
 	image: 'http://dolerecipe.dolesunshine.com/RecipeImages/300/Asian%20Mandarin%20Salad%201000x383.jpg'
@@ -1044,7 +1033,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: '12 Noon to 1 AM (Mon-Sun)',
     vote:'800 votes',
     review:'650 reviews',
-    image: 'http://blog.the3hungrymen.com/wp-content/uploads/2015/08/bbqnation-13.jpg',
+    image: 'images/restaurant3.jpg',
 		bestDish: {
 	name: ' Special Burger',
 	image: 'http://wallpapersdsc.net/wp-content/uploads/2016/09/Junk-Food-HD-Background.jpg'
@@ -1061,7 +1050,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: ' 9 AM to 7:30 PM (Mon-Sun)',
     vote:'170 votes',
     review:'140 reviews',
-    image: 'http://www.myhealthylivingcoach.com/wp-content/uploads/2015/01/Do-Fast-Food-Companies-Have-to-Take-Responsibility-for-the-Obesity-Epidemic.jpg',
+    image: 'images/restaurant5.jpg',
 		bestDish: {
 	name: ' Pizza',
 	image: 'http://myinfocart.com/wp-content/uploads/2015/08/pizza-1260x840.jpg'
@@ -1078,7 +1067,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: ' 7 AM to 11 PM (Mon-Sun)',
     vote:'600 votes',
     review:'540 reviews',
-    image: 'http://bestgiftstokolkata.com/wp-content/uploads/2015/05/Rajbhog.jpg',
+    image: 'images/restaurant6.jpg',
 		bestDish: {
 	name: 'Sweets',
 	image: 'http://images.indianexpress.com/2016/10/sweets759.jpg'
@@ -1095,7 +1084,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: ' 11:30 AM to 3:30 PM, 7 PM to 10:30 PM (Mon-Sun)',
     vote:'420 votes',
     review:'300 reviews',
-    image: 'http://img01.ibnlive.in/ibnkhabar/uploads/459x306/jpg/2015/09/p18_food-copy.jpg',
+    image: 'images/restaurant7.jpg',
 		bestDish: {
 	name: 'Corn Pizza',
 	image: 'http://noblepig.com/images/2016/06/Avocado-and-Three-Bean-Salad-is-perfect-for-a-summertime-barbecue-side-dish.JPG'
@@ -1112,7 +1101,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: ' 11:30 AM to 3:30 PM, 6:30 PM to 11:30 PM (Mon-Sun)',
     vote:'250 votes',
     review:'240 reviews',
-    image: 'https://i2.wp.com/files.hungryforever.com/wp-content/uploads/2015/10/16192325/Food-Festival.jpg?w=1269&strip=all&quality=80',
+    image: 'images/restaurant8.jpg',
 		bestDish: {
 	name: 'Pasta',
 	image: 'https://miami.eat24hours.com/files/cuisines/v4/pasta.jpg'
@@ -1129,7 +1118,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: '12 Noon to 1 AM (Mon-Sun)',
     vote:'200 votes',
     review:'150 reviews',
-    image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
+    image: 'images/restaurant9.jpg',
 		bestDish: {
 	name: 'Lunch',
 	image: 'http://72424590.r.cdnsun.net/wp-content/uploads/2015/10/healthy-lunch-2-cobb.jpg?e430d6'
@@ -1146,7 +1135,7 @@ FoodApp.controller('restaurantController',function($scope,$routeParams,$http,$lo
     hours: ' 10 AM to 12:30 AM (Mon-Sun)',
     vote:'150 votes',
     review:'120 reviews',
-    image: 'https://static.wixstatic.com/media/593f77_c738bcee99e0465d977937275ca59a7c.jpg',
+    image: 'images/restaurant10.jpg',
 		bestDish: {
 	name: 'Buscar Con',
 	image: 'https://s-media-cache-ak0.pinimg.com/originals/c9/83/7a/c9837a956910f8653d269ad8b2bd53e8.jpg'

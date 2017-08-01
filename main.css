@@ -14,13 +14,13 @@ body {
   padding:0px;
 }
 .login{
-  background-image: url('http://wallpapers-and-backgrounds.net/wp-content/uploads/2016/09/strawberry-1080p-wallpaper_1_1280x800.jpg');
+  background-image: url("images/welcome.jpg");
   background-size: cover;
   background-position: center;
   color:white;
 }
 .hero {
-    background-image: url('http://whiskeyjax.com/wp-content/uploads/2016/08/burgermenuheader-1024x320.png');
+    background-image: url("images/hero.png");
     background-size: cover;
     background-position: center;
     min-height: 400px;
