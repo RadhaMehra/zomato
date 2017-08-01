@@ -543,6 +543,7 @@ margin-left: 50%;
   left:-653px;
   padding:8px;
 }
+
 @media (max-width: 500px) {
 
 
@@ -570,7 +571,7 @@ margin-left: 50%;
       color: white;
       padding: 10px 20px;
       position:relative;
-      left:-250px;
+    left: -235px;
         height: 34px;
   }
   #home {
@@ -581,7 +582,7 @@ margin-left: 50%;
   #home1 {
     background-color: white;
     position: relative;
-    top: 59px;
+    top:66px;
     width: 362px;
     /* margin-left: 300px; */
     margin: 0 auto;
@@ -593,7 +594,7 @@ margin-left: 50%;
 #home3 {
     background-color: white;
     position: relative;
-      top: -103px;
+    top: -147px;
     width: 362px;
 
     margin: 0 auto;

@@ -6,64 +6,68 @@
 
 //});   11
 //});
+
 var FoodApp = angular.module('foodieApp',['ngRoute']);     //module
-FoodApp.config(function ($routeProvider) {
+FoodApp.config(function ($routeProvider) {								//router
 	$routeProvider
 	.when('/',{
-		templateUrl: 'pages/login.html',
+		templateUrl: 'pages/login.html',								//login url
 		controller: 'loginController'
 
 	})
-	.when('/home',{
+	.when('/home',{																//homeurl
 		templateUrl: 'pages/home.html',
 		controller: 'mainController'
 	})
-	.when('/restaurant/:id', {
+	.when('/restaurant/:id', {								//restauranturl
 		templateUrl: 'pages/restaurant.html',
 		controller: 'restaurantController'
 	})
-	.when('/online',{
+	.when('/online',{																//orderurl
 		templateUrl: 'pages/online.html',
 		controller: 'onlineController'
 	})
-	.when('/trending',{
+	.when('/trending',{												//trendingfoodurl
 		templateUrl: 'pages/trending.html',
 		controller: 'trendingController'
 	})
-	.when('/featured',{
+	.when('/featured',{										//featuredfoodurl
 		templateUrl: 'pages/featured.html',
 		controller: 'trendingController'
 	})
-	.when('/newly',{
+	.when('/newly',{								//newlyfoodurl
 		templateUrl: 'pages/newly.html',
 		controller: 'trendingController'
 	})
-	.when('/buffet',{
+	.when('/buffet',{					//buffetfoodurl
 		templateUrl: 'pages/buffet.html',
 		controller: 'trendingController'
 	})
+
 })
+
+
 
 FoodApp.controller('mainController', function($scope,$location){				//mainController
 //  $scope.restaurants = ['Pirates of Grill','Dastaan','OvenFresh,'KhoKha'];
-
-      $scope.goToOnline = function() {
+      $scope.goToOnline = function() {						//orderfunction
            console.log('Go to Online');
           $location.url('online');
         }
-				$scope.goTotrending = function() {
-					 console.log('Go to home page')
+				$scope.goTotrending = function() {					//trendingfunction
+					 console.log('Go to home page');
 					$location.url('trending');
 				}
-				$scope.goTofeatured = function() {
-					 console.log('Go to featured page')
+				$scope.goTofeatured = function() {					//featuredfunction
+					 console.log('Go to featured page');
 					$location.url('featured');
 }
-$scope.goTobuffet = function() {
+
+$scope.goTobuffet = function() {							//buffet-function
 	 console.log('Go to buffet page')
 	$location.url('buffet');
 }
-$scope.goTonewly = function() {
+$scope.goTonewly = function() {						//newlyfunction
 	 console.log('Go to new page')
 	$location.url('newly');
 }
@@ -367,7 +371,7 @@ FoodApp.controller('trendingController',function($scope,$location) {						//tren
 	      image:'images/restaurant9.jpg'
 	    }]
 })
-FoodApp.controller('featuredController',function($scope,$location) {						//trendingController
+FoodApp.controller('featuredController',function($scope,$location) {						//featuredController
 	$scope.goToOnline = function() {
 			 console.log('Go to Online');
 			$location.url('online');
@@ -524,7 +528,7 @@ FoodApp.controller('featuredController',function($scope,$location) {						//tren
 		    }]
 
 })
-FoodApp.controller('newlyController',function($scope,$location) {						//trendingController
+FoodApp.controller('newlyController',function($scope,$location) {						//newlyController
 
 	$scope.goToOnline = function() {
 			 console.log('Go to Online');
@@ -662,7 +666,7 @@ FoodApp.controller('newlyController',function($scope,$location) {						//trendin
 	      image: 'images/restaurant10.jpg'
 	    }]
 })
-FoodApp.controller('buffetController',function($scope,$location) {						//trendingController
+FoodApp.controller('buffetController',function($scope,$location) {						//buffetController
 	$scope.goToOnline = function() {
 			 console.log('Go to Online');
 			$location.url('online');
