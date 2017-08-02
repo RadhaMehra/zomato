@@ -775,21 +775,22 @@ FoodApp.controller('buffetController',function($scope,$location) {						//buffet
 	      image: 'images/restaurant6.jpg'
 
 	    },
-	    {
-	      name: 'Family Tree',
-	      address: 'Shop 4, Ravi Industries, Panch Pakhadi, Thane West',
-	      location: 'Mumbai',
-	      category: 'Casual Dining',
-	      rating: '4.5',
-	      cuisines: 'Italian, Mexican, North Indian, Chinese',
-	      cost: '800 ',
-	      hours: ' 11:30 AM to 3:30 PM, 6:30 PM to 11:30 PM (Mon-Sun)',
-	      vote:'250 votes',
-	      review:'240 reviews',
-	      id:'8',
-				images:'images/restaurant7.jpg'
+			{
+			 name: 'Family Tree',
+			 address: 'Shop 4, Ravi Industries, Panch Pakhadi, Thane West',
+			 location: 'Mumbai',
+			 category: 'Casual Dining',
+			 rating: '4.5',
+			 cuisines: 'Italian, Mexican, North Indian, Chinese',
+			 cost: '800 ',
+			 hours: ' 11:30 AM to 3:30 PM, 6:30 PM to 11:30 PM (Mon-Sun)',
+			 vote:'250 votes',
+			 review:'240 reviews',
+			 id:'8',
+			 image: 'images/restaurant8.jpg'
 
-	    },
+		 },
+
 	    {
 	      name: 'Hauz Khas Social',
 	      address: '23, 1st Floor, Odeon Building, Radial 5, D Block, Connaught Place, New Delhi',
