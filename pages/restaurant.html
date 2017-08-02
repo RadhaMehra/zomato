@@ -57,11 +57,11 @@
         <div ng-if="restaurant.bestDish"><small>Recommended: </small></div>
     </div>
     <div class="value">
-        <div>{{restaurant.cuisines}}</div>
-          <div ng-bind="restaurant.cost | number "></div>
-        <div>{{restaurant.hours}}</div>
+        <div ng-bind="restaurant.cuisines"></div>
+        <span>₹<span ng-bind="restaurant.cost | number "></span></span>
+          <div ng-bind=restaurant.hours></div>
         <div class="bestDish" ng-if="restaurant.bestDish">
-	      <span>{{restaurant.bestDish.name}} </span>
+	      <span ng-bind="restaurant.bestDish.name"> </span>
 	        <div ng-click="getIngredients(restaurant.bestDish.image)" class="button">Get Ingredients</div>
 
 		</div>
