@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
               <li><a href="#!/home">Home</a></li>
-            
+
               <li><a ng-click="goToOnline()">Order Online</a></li>
               <li><a href="#!/">Logout</a></li>
             </ul>
@@ -78,7 +78,7 @@
     </div>
     <div class="value">
         <div ng-bind=restaurant.cuisines></div>
-        <div ng-bind=restaurant.cost | number></div>
+        <div ng-bind="restaurant.cost | number "></div>
         <div ng-bind=restaurant.hours></div>
     </div>
 </div>
